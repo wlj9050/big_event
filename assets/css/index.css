@@ -1,0 +1,40 @@
+.layui-body{
+    overflow: hidden;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+.layui-footer{
+    text-align: center;
+}
+.layui-icon{
+    margin-right: 10px;
+}
+.layui-nav-child .layui-icon{
+    margin-left: 20px;
+}
+.text_avatar{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: skyblue;
+    border-radius: 50%;
+}
+.suer_info{
+    width: 215px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+.suer_info img{
+    width: 30px;
+    height: 30px;
+}
+.layui-nav-img{
+    border-radius: 50%;
+    margin: 10px;
+    margin-left: 45px;
+}
