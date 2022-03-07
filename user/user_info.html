@@ -14,13 +14,13 @@
     <div class="layui-card">
         <div class="layui-card-header">提交用户信息</div>
         <div class="layui-card-body">
-            <div class="layui-form" lay-filter="form_userinfo">
-                <!-- 隐藏表单域 -->
+            <!-- 隐藏表单域 -->
+            <form class="layui-form" lay-filter="form_userinfo">
                 <input type="hidden" id="id">
                 <div class="layui-form-item">
                     <label class="layui-form-label">登录名称</label>
                     <div class="layui-input-block">
-                        <input type="text" name="username" readonly required lay-verify="required" placeholder="请输入标题"
+                        <input type="text" name="username" readonly required lay-verify="required" placeholder="请输入用户名"
                             autocomplete="off" class="layui-input">
                     </div>
                 </div>
@@ -45,7 +45,7 @@
                         <button class="layui-btn" id="submit_btn" lay-submit lay-filter="formDemo">立即提交</button>
                         <button type="reset" id="btn_reset" class="layui-btn layui-btn-primary">重置</button>
                     </div>
-                </div>
+                </div>>
             </form>
         </div>
     </div>
@@ -53,6 +53,6 @@
 <script src="/assets/lib/layui/layui.all.js"></script>
 <script src="/assets/lib/jquery.js"></script>
 <script src="/assets/js/user/user_info.js"></script>
-<!-- <script src="/assets/js/baseAPI.js"></script> -->
+<script src="/assets/js/baseAPI.js"></script>
 
 </html>

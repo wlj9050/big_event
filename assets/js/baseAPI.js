@@ -10,7 +10,6 @@ $.ajaxPrefilter(function (options) {
     }
     // 权限管理的优化
     options.complete = function (res) {
-        console.log(res);
         if (res.status === 1 && res.message === '身份认证失败！') {
             location.href = '/login.html'
         }

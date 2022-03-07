@@ -32,15 +32,11 @@ $('#btn_reset').on('click', function (e) {
 })
 
 $('#submit_btn').click(function (e) {
-    console.log(1);
     e.preventDefault()
     $.ajax({
-        type: 'post',
-        url: 'http://www.liulongbin.top:3007/my/userinfo',
+        method: 'post',
+        url: '/my/userinfo',
         data: $(this).serialize(),
-        headers: {
-            Authorization: localStorage.getItem('token') || ''
-        },
         success: function (res) {
             console.log(res);
             if (res.status !== 0) {

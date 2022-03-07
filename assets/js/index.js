@@ -8,14 +8,12 @@ function getUserInfo() {
             Authorization: localStorage.getItem('token') || ''
         },
         success: function (res) {
-            // console.log(res)
             if (res.status !== 0) {
                 return alert('认证信息失败')
             }
             renderAvatar(res.data)
         },
         complete: function (res) {
-            console.log(res);
             if (res.responseJSON.status === 1 && res.responseJSON.message === '身份认证失败！') {
                 location.href = '/login.html'
             }
