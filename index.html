@@ -70,9 +70,9 @@
                     <li class="layui-nav-item">
                         <a href="javascript:;"><i class="layui-icon layui-icon-user"></i>个人中心</a>
                         <dl class="layui-nav-child">
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>基本资料</a></dd>
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>更换头像</a></dd>
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>重置密码</a></dd>
+                            <dd><a href="/user/user_info.html" target="fm"><i class="layui-icon layui-icon-app"></i>基本资料</a></dd>
+                            <dd><a href="/user/user_avatar.html" target="fm"><i class="layui-icon layui-icon-app"></i>更换头像</a></dd>
+                            <dd><a href="/user/user_password.html" target="fm"><i class="layui-icon layui-icon-app"></i>重置密码</a></dd>
                         </dl>
                     </li>
                     
@@ -82,7 +82,7 @@
         
         <div class="layui-body">
             <!-- 内容主体区域 -->
-            <iframe name="" src="/home/dashboard.html" frameborder="0"></iframe>
+            <iframe name="fm" src="/home/dashboard.html" frameborder="0"></iframe>
         </div>
         
         <div class="layui-footer">
@@ -93,10 +93,10 @@
 </body>
 <!-- jQuery文件 -->
 <script src="/assets/lib/jquery.js"></script>
+<!-- baseAPI文件 -->
+<!-- <script src="/assets/js/baseAPI.js"></script> -->
 <!-- layui的js文件 -->
 <script src="/assets/lib/layui/layui.all.js"></script>
 <!-- 自己的js文件 -->
 <script src="/assets/js/index.js"></script>
-<!-- baseAPI文件 -->
-<script src="/assets/js/baseAPI.js"></script>
 </html>

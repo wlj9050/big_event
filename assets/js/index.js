@@ -8,11 +8,11 @@ function getUserInfo() {
             Authorization: localStorage.getItem('token') || ''
         },
         success: function (res) {
-            console.log(res)
+            // console.log(res)
             if (res.status !== 0) {
                 return alert('认证信息失败')
             }
-            renderAvater(res.data)
+            renderAvatar(res.data)
         },
         complete: function (res) {
             console.log(res);
@@ -23,7 +23,7 @@ function getUserInfo() {
     });
 }
 // 封装函数，渲染用户头像
-function renderAvater(data) {
+function renderAvatar(data) {
     var name = data.nickname || data.username
     $('#welcome').html('欢迎&nbsp;&nbsp;' + name)
     if (data.user_pic !== null) {
