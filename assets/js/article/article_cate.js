@@ -31,10 +31,8 @@ $('body').on('submit', '#form_add', function (e) {
             if (res.status !== 0) {
                 return layer.msg('添加失败')
             }
-            // 添加成功，调用函数重新获取文章列表--渲染页面
             init()
             layer.msg('添加成功')
-            // 通过索引号关闭弹出层
             layer.close(indexAdd)
         }
     })
@@ -43,7 +41,7 @@ $('tbody').on('click', '#btn-edit', function () {
     indexEdit = layer.open({
         type: '1',
         title: '添加文章分类',
-        area: ['500px', '300px'],
+        area: ['500px', '250px'],
         content: $('#edit').html()
     });
     var id = $(this).attr('data-id')
